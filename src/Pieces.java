@@ -8,5 +8,4 @@ public abstract class Pieces {
 	public abstract boolean canJump();
 	
 	public abstract String toString();
-	
 }

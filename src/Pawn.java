@@ -1,6 +1,5 @@
 public class Pawn extends Pieces {
 
-	private String name;
 	public Pawn(){
 		name = "Pawn";
 	}
@@ -34,8 +33,7 @@ public class Pawn extends Pieces {
 	@Override
 	public String toString() {
 		return "p";
-		// TODO Auto-generated method stub
-//		return null;
+		
 	}
 
 }
