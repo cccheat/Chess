@@ -82,7 +82,7 @@ public class boardGUI {
 
 				JFrame f = new JFrame("ChessChamp");
 				f.add(cb.getGui());
-				f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+				f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				f.setLocationByPlatform(true);
 
 				// ensures the frame is the minimum size it needs to be
