@@ -1,9 +1,14 @@
-public abstract class Pieces {
+public abstract class Pieces extends Board {
 	public String name;
 
 	// public boolean isAlive;
 
-	public abstract boolean canMove(int startx, int starty, int endx, int endy, boolean isOccupied);
+	// still needs finishing
+	public boolean isFree(int endX, int endY) {
+		return true;
+	}
+
+	public abstract boolean canMove(int startx, int starty, int endx, int endy);
 
 	public abstract boolean canJump();
 

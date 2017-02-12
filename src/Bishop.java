@@ -6,9 +6,10 @@ public class Bishop extends Pieces {
 	}
 
 	@Override
-	public boolean canMove(int startx, int starty, int endx, int endy, boolean isOccupied) {
-		if (Math.abs(startx - endx) == Math.abs(starty - endy)) {
-			return true;
+	public boolean canMove(int startx, int starty, int endx, int endy) {
+		if (isFree(endx, endy) && isValid(endx, endy)) {
+			if (Math.abs(startx - endx) == Math.abs(starty - endy))
+				return true;
 		}
 		return false;
 	}
@@ -20,7 +21,7 @@ public class Bishop extends Pieces {
 
 	@Override
 	public String toString() {
-		return "b";
+		return "bishop";
 	}
 
 }

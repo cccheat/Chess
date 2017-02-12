@@ -1,28 +1,22 @@
-public class Rook extends Pieces {
 
-	public Rook() {
-		name = "Rook";
-	}
+public class Knight extends Pieces {
 
 	@Override
 	public boolean canMove(int startx, int starty, int endx, int endy) {
 		if (isFree(endx, endy) && isValid(endx, endy)) {
-			if (((startx == endx) && !(endy == starty)) || (!(startx == endx) && (endy == starty)))
-				return true;
-		} else {
-			return false;
+			//i cant come up with a way to make this work
 		}
 		return false;
 	}
 
 	@Override
 	public boolean canJump() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "rook";
+		return "knight";
 	}
 
 }
