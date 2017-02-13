@@ -5,15 +5,13 @@ public class Rook extends Pieces {
 	}
 
 	@Override
-	public boolean canMove(int startx, int starty, int endx, int endy, boolean isOccupied) {
-		if (starty == endy) {
-			return true;
+	public boolean canMove(int startx, int starty, int endx, int endy) {
+		if (isFree(endx, endy) && isValid(endx, endy)) {
+			if (((startx == endx) && !(endy == starty)) || (!(startx == endx) && (endy == starty)))
+				return true;
+		} else {
+			return false;
 		}
-
-		if (startx == endx) {
-			return true;
-		}
-
 		return false;
 	}
 
@@ -24,7 +22,13 @@ public class Rook extends Pieces {
 
 	@Override
 	public String toString() {
-		return "r";
+		return "rook";
+	}
+
+	@Override
+	public boolean IntheWay(int startx, int starty, int endx, int endy) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

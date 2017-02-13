@@ -5,16 +5,14 @@ public class Pawn extends Pieces {
 	}
 
 	@Override
-	public boolean canMove(int startx, int starty, int endx, int endy, boolean isOccupied) {
-		if (isOccupied == false) {
-			if (startx == endx && endy == starty + 1) {
+	public boolean canMove(int startx, int starty, int endx, int endy) {
+		if (isFree(endx, endy) && isValid(endx, endy)) {
+			if (startx == endx && endy == starty + 1)
 				return true;
-			}
 			return false;
-
 		}
 
-		if (isOccupied == true) {
+		if (!isFree(endx, endy)) {
 			if (endx == startx + 1 && endy == starty + 1) {
 				return true;
 			} else if (endx == startx - 1 && endy == starty + 1) {
@@ -32,8 +30,14 @@ public class Pawn extends Pieces {
 
 	@Override
 	public String toString() {
-		return "p";
+		return "pawn";
 
+	}
+
+	@Override
+	public boolean IntheWay(int startx, int starty, int endx, int endy) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
