@@ -1,10 +1,10 @@
 /Bishop.class
 /Board.class
 /King.class
+/Knight.class
 /Pawn.class
 /Pieces.class
 /Queen.class
 /Rook.class
 /boardGUI$1.class
 /boardGUI.class
-/Knight.class

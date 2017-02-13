@@ -9,7 +9,6 @@ public class Pawn extends Pieces {
 		if (isFree(endx, endy) && isValid(endx, endy)) {
 			if (startx == endx && endy == starty + 1)
 				return true;
-			return false;
 		}
 
 		if (!isFree(endx, endy)) {

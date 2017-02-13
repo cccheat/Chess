@@ -27,7 +27,7 @@ public class Rook extends Pieces {
 
 	@Override
 	public boolean IntheWay(int startx, int starty, int endx, int endy) {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 

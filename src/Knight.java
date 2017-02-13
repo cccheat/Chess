@@ -21,7 +21,7 @@ public class Knight extends Pieces {
 
 	@Override
 	public boolean IntheWay(int startx, int starty, int endx, int endy) {
-		// TODO Auto-generated method stub
+		//dont need it because he can just jump over
 		return false;
 	}
 
