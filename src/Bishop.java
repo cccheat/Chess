@@ -24,4 +24,10 @@ public class Bishop extends Pieces {
 		return "bishop";
 	}
 
+	@Override
+	public boolean IntheWay(int startx, int starty, int endx, int endy) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

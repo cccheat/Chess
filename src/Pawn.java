@@ -10,7 +10,7 @@ public class Pawn extends Pieces {
 			if (startx == endx && endy == starty + 1)
 				return true;
 			return false;
-}
+		}
 
 		if (!isFree(endx, endy)) {
 			if (endx == startx + 1 && endy == starty + 1) {
@@ -32,6 +32,12 @@ public class Pawn extends Pieces {
 	public String toString() {
 		return "pawn";
 
+	}
+
+	@Override
+	public boolean IntheWay(int startx, int starty, int endx, int endy) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
