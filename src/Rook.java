@@ -25,9 +25,32 @@ public class Rook extends Pieces {
 		return "rook";
 	}
 
+	@SuppressWarnings("unused")
 	@Override
 	public boolean IntheWay(int startx, int starty, int endx, int endy) {
-		
+		// if the xs are the same it must be moving up on the y axis meaing i
+		// have to check every y value on the movement scale
+		if (startx == endx) {
+			for (int i = starty; i < endy; i++) {
+				// if there is anything on the board then say false
+				// otherwise just give a true
+				if (!(chessBoard[startx][i] == null))
+					return false;
+				else
+					return true;
+			}
+			// if the ys are the same it checks every value on the x value of
+			// the movement scale
+		} else if (starty == endy) {
+			for (int o = startx; o < endx; o++) {
+				// if there is anything on the board then say false
+				// otherwise just give a true
+				if (!(chessBoard[o][starty] == null))
+					return false;
+				else
+					return true;
+			}
+		}
 		return false;
 	}
 

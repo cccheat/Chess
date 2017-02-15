@@ -22,6 +22,7 @@ public abstract class Pieces extends Board {
 	 * checks if there is anything in the way fo the moving it is individual per
 	 * piece movement -> some share because they have the same basic movement
 	 * everyone except of knight needs it
+	 *
 	 * @param startx
 	 * @param starty
 	 * @param endx

@@ -1,6 +1,6 @@
 
 public class Board {
-	private Pieces[][] chessBoard;
+	public Pieces[][] chessBoard;
 
 	// good coding practice
 	public static int WIDTH = 8;
