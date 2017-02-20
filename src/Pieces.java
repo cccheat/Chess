@@ -1,6 +1,6 @@
 public abstract class Pieces extends Board {
 	public String name;
-
+	public String Color;
 	// public boolean isAlive;
 
 	// still needs finishing

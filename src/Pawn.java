@@ -1,5 +1,6 @@
 public class Pawn extends Pieces {
-
+	public int MOVE_COUNT = 0;
+	
 	public Pawn() {
 		name = "Pawn";
 	}

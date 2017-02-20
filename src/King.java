@@ -10,6 +10,7 @@ public class King extends Pieces {
 	@Override
 	public boolean canMove(int startx, int starty, int endx, int endy) {
 		if (isFree(endx, endy) && isValid(endx, endy)) {
+			//it can only move one
 			if (Math.abs(startx - endx) <= 1 && Math.abs(starty - endy) <= 1)
 				return true;
 		}
