@@ -24,10 +24,36 @@ public class Queen extends Pieces {
 		return "queen";
 	}
 
+	@SuppressWarnings("unused")
 	@Override
 	public boolean IntheWay(int startx, int starty, int endx, int endy) {
-		// TODO Auto-generated method stub
+		// if the xs are the same it must be moving up on the y axis meaing i
+		// have to check every y value on the movement scale
+		if (startx == endx) {
+			for (int i = starty; i < endy; i++) {
+				// if there is anything on the board then say false
+				// otherwise just give a true
+				if (!(chessBoard[startx][i] == null))
+					return false;
+				else
+					return true;
+			}
+			// if the ys are the same it checks every value on the x value of
+			// the movement scale
+		} else if (starty == endy) {
+			for (int o = startx; o < endx; o++) {
+				// if there is anything on the board then say false
+				// otherwise just give a true
+				if (!(chessBoard[o][starty] == null))
+					return false;
+				else
+					return true;
+		} else if (!(startx == endx) && !(starty == endy)){
+				
+			}
+		}
 		return false;
+
 	}
 
 }
