@@ -36,7 +36,7 @@ public class Pawn extends Pieces {
 
 	@Override
 	public boolean IntheWay(int startx, int starty, int endx, int endy) {
-		// TODO Auto-generated method stub
+		//dont need it cuz it can only move one except of in the first one in which you wont get a object in the way
 		return false;
 	}
 

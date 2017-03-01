@@ -9,8 +9,7 @@ public class King extends Pieces {
 	// public boolean isAlive;
 	@Override
 	public boolean canMove(int startx, int starty, int endx, int endy) {
-		if (isFree(endx, endy) && isValid(endx, endy)) {
-			// it can only move one
+		if (isFree(endx, endy) && isValid(endx, endy) && !IntheWay(startx, starty, endx, endy)) {
 			if (Math.abs(startx - endx) <= 1 && Math.abs(starty - endy) <= 1)
 				return true;
 		}
@@ -27,13 +26,10 @@ public class King extends Pieces {
 		return "king";
 	}
 
-	//dont actualy need it
 	@Override
 	public boolean IntheWay(int startx, int starty, int endx, int endy) {
-		if (!(isFree(endx, endy)))
-			return true;
-		else
-			return false;
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
