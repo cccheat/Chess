@@ -48,10 +48,17 @@ public class Queen extends Pieces {
 					return false;
 				else
 					return true;
+<<<<<<< HEAD
 			}
 		} else if (!(startx == endx) && !(starty == endy)){
 				
 			}
+=======
+		} else if (!(startx == endx) && !(starty == endy)){
+				
+			}
+		}
+>>>>>>> origin/master
 		return false;
 
 	}
